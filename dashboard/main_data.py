@@ -5,7 +5,6 @@ import seaborn as sns
 import streamlit as st
 import urllib
 from library import DataAnalyzer
-from babel.numbers import format_currency
 sns.set(style='darkgrid')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_backgroundColor="#0000"
