@@ -33,7 +33,7 @@ with st.sidebar:
     st.title("M.Wahyu Elfander")
 
     # Logo Image
-    st.image("../dashboard/ubuntu.png")
+    st.image("ubuntu.png")
 
     # Date Range
     start_date, end_date = st.date_input(
