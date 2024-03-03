@@ -13,7 +13,7 @@ st.set_backgroundColor="#0000"
 
 
 datetime_cols = ["order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date", "order_estimated_delivery_date", "order_purchase_timestamp", "shipping_limit_date"]
-data_keseluruhan = pd.read_csv("../dashboard/proyek_ahir.csv")
+data_keseluruhan = pd.read_csv("proyek_ahir.csv")
 data_keseluruhan.sort_values(by="order_approved_at", inplace=True)
 data_keseluruhan.reset_index(inplace=True)
 
