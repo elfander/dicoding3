@@ -18,7 +18,7 @@ data_keseluruhan.sort_values(by="order_approved_at", inplace=True)
 data_keseluruhan.reset_index(inplace=True)
 
 # Geolocation Dataset
-geolocation = pd.read_csv('geolocation.csv')
+geolocation = pd.read_csv('./geolocation.csv')
 
 
 for col in datetime_cols:
