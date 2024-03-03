@@ -17,8 +17,7 @@ data_keseluruhan = pd.read_csv("proyek_ahir.csv")
 data_keseluruhan.sort_values(by="order_approved_at", inplace=True)
 data_keseluruhan.reset_index(inplace=True)
 
-# Geolocation Dataset
-geolocation = pd.read_csv('./geolocation.csv')
+
 
 
 for col in datetime_cols:
@@ -44,7 +43,7 @@ with st.sidebar:
         disabled=True
     )
 
-# Main
+# Program main
 main_df = data_keseluruhan[(data_keseluruhan["order_approved_at"] >= str(start_date)) & 
                  	    (data_keseluruhan["order_approved_at"] <= str(end_date))]
 
